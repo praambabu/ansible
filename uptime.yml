@@ -1,0 +1,20 @@
+---
+- hosts: node
+
+  tasks:
+    
+    - name: Status of nodes
+      command: uptime
+      register: uptime_status
+
+    - name: Status of disk
+      command: df -Th
+      register: disk_status
+
+    - name: Uptime of nodes
+      debug:
+        msg: "Uptime: {{ uptime_status.stdout }}" 
+
+    - name: Disk status
+      debug:
+        msg: "{{ disk_status.stdout_lines}}"
