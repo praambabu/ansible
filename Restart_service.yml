@@ -3,5 +3,5 @@
   tasks: 
   - name: Restart sshd service
     service:
-    name: sshd
-    state: restarted
+      name: sshd
+      state: restarted
