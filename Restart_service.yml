@@ -5,3 +5,8 @@
     service:
       name: sshd
       state: restarted
+    register: service_status
+
+  - name: Service status
+    debug:
+      msg: "{{ service_status }}"
