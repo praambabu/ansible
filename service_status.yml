@@ -4,7 +4,7 @@
   - name: sshd service status
     service:
       name: sshd
-      state: status
+      state: restarted
     register: service_status
 
   - name: Service status
