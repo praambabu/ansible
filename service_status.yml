@@ -9,4 +9,4 @@
 
   - name: Service status
     debug:
-      msg: "{{ service_status }}"
+      msg: "{{ service_status..status }}"
