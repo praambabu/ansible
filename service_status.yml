@@ -1,0 +1,12 @@
+---
+- hosts: node
+  tasks: 
+  - name: sshd service status
+    service:
+      name: sshd
+      state: status
+    register: service_status
+
+  - name: Service status
+    debug:
+      msg: "{{ service_status }}"
