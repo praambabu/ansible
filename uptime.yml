@@ -25,4 +25,4 @@
 
     - name: LSBLK_status
       debug:
-        msg: "LSBLK: {{ lsblk_status }}" 
+        msg: "LSBLK: {{ lsblk_status.stdout }}" 
