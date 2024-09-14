@@ -5,6 +5,6 @@
     command: systemctl status nginx.service
     register: service_status
 
- - name: Nginx_Service_Statuss
+ - name: Nginx_Service_Statusss
    debug:
      msg: "{{service_status.stdout_lines}}"
