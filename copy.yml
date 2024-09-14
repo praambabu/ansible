@@ -2,7 +2,7 @@
 - hosts: node
 
   tasks:
-    - name: copy a file from source to managed nodes
+    - name: copy a file from source to managed nodess
       copy:
         src: uptime.yml
         dest: /tmp
