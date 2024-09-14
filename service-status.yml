@@ -1,7 +1,7 @@
 ---
 - hosts: node1
   tasks:
-  - name: Nginx Service Status
+  - name: Nginx Service Statuss
     command: systemctl status nginx.service
     register: service_status
 
