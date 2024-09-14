@@ -15,7 +15,7 @@
       debug:
         msg: "Uptime: {{ uptime_status.stdout }}" 
 
-    - name: Disk status
+    - name: Disk statuss
       debug:
         msg: "{{ disk_status.stdout_lines}}"
 
