@@ -18,3 +18,11 @@
     - name: Disk status
       debug:
         msg: "{{ disk_status.stdout_lines}}"
+
+    - name: LSBLK
+      command: lsblk
+      register: lsblk_status
+
+    - name: LSBLK_status
+      debug:
+        msg: "LSBLK: {{ lsblk_status }}" 
