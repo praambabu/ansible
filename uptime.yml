@@ -11,7 +11,7 @@
       command: df -Th
       register: disk_status
 
-    - name: Uptime of nodes
+    - name: Uptime of nodess
       debug:
         msg: "Uptime: {{ uptime_status.stdout }}" 
 
