@@ -11,7 +11,7 @@
       command: df -Th
       register: disk_status
 
-    - name: Uptime of nodess
+    - name: Uptime of nodes
       debug:
         msg: "Uptime: {{ uptime_status.stdout }}" 
 
@@ -23,6 +23,6 @@
       command: lsblk
       register: lsblk_status
 
-    - name: LSBLK_status
+    - name: LSBLK_statuss
       debug:
         msg: "LSBLK: {{ lsblk_status.stdout }}" 
