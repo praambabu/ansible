@@ -1,10 +1,10 @@
 ---
 - hosts: node1
   tasks:
-  - name: Nginx Service Statuss
+  - name: Nginx Service Status
     command: systemctl status nginx.service
     register: service_status
 
- - name: Nginx_Service_Statuss
+ - name: Nginx_Service_Status
    debug:
      msg: "{{service_status.stdout_lines}}"
