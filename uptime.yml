@@ -3,7 +3,7 @@
 
   tasks:
     
-    - name: Status of node
+    - name: Status of nodeee
       command: uptime
       register: uptime_status
 
