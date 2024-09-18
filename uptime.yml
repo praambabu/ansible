@@ -3,7 +3,7 @@
 
   tasks:
     
-    - name: Status of nodess
+    - name: Status of node
       command: uptime
       register: uptime_status
 
@@ -11,11 +11,11 @@
       command: df -Th
       register: disk_status
 
-    - name: Uptime of nodess
+    - name: Uptime of node
       debug:
         msg: "Uptime: {{ uptime_status.stdout }}" 
 
-    - name: Disk statuss
+    - name: Disk status
       debug:
         msg: "{{ disk_status.stdout_lines}}"
 
@@ -23,6 +23,6 @@
       command: lsblk
       register: lsblk_status
 
-    - name: LSBLK_statuss
+    - name: LSBLK_status
       debug:
         msg: "LSBLK: {{ lsblk_status.stdout }}" 
