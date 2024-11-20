@@ -19,7 +19,7 @@
       debug:
         msg: "{{ disk_status.stdout_lines}}"
 
-    - name: LSBLK_new
+    - name: LSBLK_new_status
       command: lsblk
       register: lsblk_status
 
