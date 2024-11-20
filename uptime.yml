@@ -15,11 +15,11 @@
       debug:
         msg: "Uptime: {{ uptime_status.stdout }}" 
 
-    - name: Disk status
+    - name: Disk status_new
       debug:
         msg: "{{ disk_status.stdout_lines}}"
 
-    - name: LSBLK
+    - name: LSBLK_new
       command: lsblk
       register: lsblk_status
 
