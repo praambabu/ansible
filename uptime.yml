@@ -3,7 +3,7 @@
 
   tasks:
     
-    - name: Status of nodeeeeeeeeeeeeeeeeee
+    - name: Status of node_new_status
       command: uptime
       register: uptime_status
 
